@@ -11,9 +11,10 @@ function UseMemo({ todos }) {
   };
   return (
     <div id="calc">
-      <p>{<p>{dynamicContent}</p>}</p>
+        <p id="incr-cnt">Count: {count}</p>
+      <p>{dynamicContent}</p>
       <button id="incr-btn" onClick={handleIncrement}>
-        {count}
+        + {count}
       </button>
       <ul>
         {todos.map((todo, index) => (

@@ -35,7 +35,7 @@ function App() {
         Add Todo
       </button>
       <button id="increment-btn" onClick={handleIncrement}>
-        {count}
+        + {count}
       </button>
       <input
       id="skill-input"
