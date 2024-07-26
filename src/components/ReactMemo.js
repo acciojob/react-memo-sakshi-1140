@@ -5,7 +5,7 @@ const ReactMemo = React.memo(({ todos }) => {
   return (
     <div>
       <h2>ReactMemo Component</h2>
-      <ul>
+      <ul id ="item-jumbotron">
         {todos.map((todo, index) => (
           <li key={index}>{todo}</li>
         ))}

@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   const addTask = () => {
-    setTaskList([...taskList, "New todo"]);
+    setTaskList([...taskList, "New Todo"]);
     console.log(taskList);
   };
   const handleIncrement = () => {
