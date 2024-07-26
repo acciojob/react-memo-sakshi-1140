@@ -21,7 +21,7 @@ function App() {
   }
   const handleSkillSubmit=()=>{
     if(skillInput.length>5){
-        setTaskList(...taskList,skillInput);
+        setTaskList([...taskList,skillInput]);
         setSkillInput("");
 
     }else{
@@ -45,6 +45,7 @@ function App() {
       />
       <button id="skill-btn"
       onClick={handleSkillSubmit}>Add Skill</button>
+       
        <UseMemo todos={memoizedTodos} />
        <ReactMemo todos={memoizedTodos} />
    

@@ -6,10 +6,12 @@ function UseMemo({ todos }) {
   return (
     <div>
       <h2>UseMemo Component</h2>
-      <p>Number of tasks: {count}</p>
+      <p id="incr-cnt">Number of tasks: {count}</p>
       <ul>
         {todos.map((todo, index) => (
-          <li key={index}>{todo}</li>
+          <li id={`todo-${index}`} key={index}>{todo}
+          
+          </li>
         ))}
       </ul>
     </div>
