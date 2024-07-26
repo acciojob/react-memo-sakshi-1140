@@ -12,7 +12,7 @@ function UseMemo({ todos }) {
   return (
     <div id="calc">
       <p>{<p>{dynamicContent}</p>}</p>
-      <button id="incr-cnt" onClick={handleIncrement}>
+      <button id="incr-btn" onClick={handleIncrement}>
         {count}
       </button>
       <ul>
