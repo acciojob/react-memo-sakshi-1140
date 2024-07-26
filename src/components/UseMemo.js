@@ -2,15 +2,16 @@ import React, { useMemo, useState } from 'react';
 
 function UseMemo({ todos }) {
       const [count, setCount] = useState(0);
-  const NoOfTask = useMemo(() => todos.length, [todos]);
+      const dynamicContent = useMemo(() => {
+        return 1000000000 + count;
+      }, [count]);
   const handleIncrement = () => {
     setCount(count + 1);
     console.log(`count after increment ${count}`);
   };
   return (
     <div id="calc">
-      <h2>UseMemo Component</h2>
-      <p>No of Tasks: {NoOfTask}</p>
+      <p>{<p>{dynamicContent}</p>}</p>
       <button id="incr-cnt" onClick={handleIncrement}>
         {count}
       </button>
